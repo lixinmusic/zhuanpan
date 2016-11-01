@@ -91,6 +91,13 @@ a {
 	z-index: 40;
 }
 
+
+
+
+
+
+
+
 /* ******遮罩代码****** */
 
 .zhe {
@@ -106,6 +113,28 @@ a {
   z-index: 2;
    }
 
+/* 一张图 */
+.guan{
+  width:1.21rem;
+  height:1.21rem;
+  background: #373b3e;
+ border-radius:50%;
+ position: relative;
+}
+.guan img{
+  width: 0.59rem;
+  height:0.59rem;
+  border-radius:50%;
+  position: absolute;
+  left: 0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin: auto;
+
+}
+
+
 
   .zhe .bosom {
     width: 5.1rem;
@@ -114,7 +143,7 @@ a {
    /*   border:1px solid #fff; */
     position: absolute;
     left:0.6rem;
-    bottom:1.5rem;
+    bottom:0.5rem;
    
   }
   .bosom .h{
@@ -137,7 +166,7 @@ a {
       background: #b4002d;
       position: absolute;
       left: 2.02rem;
-      bottom: 0.6rem; 
+      bottom: 0.2rem; 
     }
   .zhe input {
     border: none;
