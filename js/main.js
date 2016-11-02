@@ -47,7 +47,7 @@ $(document).ready(function(){
 	//各奖项对应的旋转角度及中奖公告内容
 	function probability(){
 		//获取随机数
-		var num = parseInt(Math.random()*(5 - 0 + 0) + 0);
+		var num = parseInt(Math.random()*(7 - 0 + 0) + 0);
 		//概率
 		/*if ( num == 0 ) {
 			angles = 2160 * rotNum + 1800;
