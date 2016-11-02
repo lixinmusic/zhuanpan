@@ -9,8 +9,8 @@ $(document).ready(function(){
 	var notice = null;
 	//转盘初始化
 	var color = ["#c1002d","#ffe365","rgba(0,0,0,0.5)","#94928e","white","#FF4350"];
-	var info = ["谢谢参与","  1000","   50","  500","  100"," 999","    10","   20"];
-	var info1 = ['再接再厉','      元现金','     红包','  元现金','     红包','  元现金','     红包','  元现金']
+	var info = ["谢谢参与","  10","   1","  0.5","  100"," 0.1"," 神秘奖品","   0.05"];
+	var info1 = ['再接再厉','      红包','     红包','  红包','     红包','  元现金','在等着你','红包']
 	canvasRun();
 	$('#tupBtn').bind('click',function(){
 		if (clickNum >= 1) {
@@ -50,8 +50,8 @@ $(document).ready(function(){
 		var num = parseInt(Math.random()*(7 - 0 + 0) + 0);
 		//概率
 		if ( num == 0 ) {
-			angles = 2160 * rotNum + 1800;
-			notice = info[0] + info1[0];
+			/*angles = 2160 * rotNum + 1800;
+			notice = info[0] + info1[0];*/
 		}
 		//概率
 		else if ( num == 1 ) {
@@ -70,8 +70,8 @@ $(document).ready(function(){
 		}
 		//概率
 		else if ( num == 4 ) {
-			angles = 2160 * rotNum + 1980;
-			notice = info[4] + info1[4];
+		/*	angles = 2160 * rotNum + 1980;
+			notice = info[4] + info1[4];*/
 		}
 		//概率
 		else if ( num == 5 ) {
@@ -80,8 +80,8 @@ $(document).ready(function(){
 		}
 		//概率
 		else if ( num == 6 ) {
-			angles = 2160 * rotNum + 2070;
-			notice = info[2] + info1[2];
+			/*angles = 2160 * rotNum + 2070;
+			notice = info[2] + info1[2];*/
 		}
 		//概率
 		else if ( num == 7 ) {
