@@ -2,7 +2,7 @@ $(document).ready(function(){
 	//旋转角度
 	var angles;
 	//可抽奖次数
-	var clickNum = 5;
+	var clickNum = 10;
 	//旋转次数
 	var rotNum = 0;
 	//中奖公告
@@ -10,7 +10,7 @@ $(document).ready(function(){
 	//转盘初始化
 	var color = ["#c1002d","#ffe365","rgba(0,0,0,0.5)","#94928e","white","#FF4350"];
 	var info = ["谢谢参与","  10","   1","  0.5","  100"," 0.1"," 神秘奖品","   0.05"];
-	var info1 = ['再接再厉','      红包','     红包','  红包','     红包','  元现金','在等着你','    红包']
+	var info1 = ['再接再厉','      红包','     红包','  红包','     红包','  红包','在等着你','    红包']
 	canvasRun();
 	$('#tupBtn').bind('click',function(){
 		if (clickNum >= 1) {
