@@ -79,10 +79,10 @@ $(document).ready(function(){
 			notice = info[3] + info1[3];
 		}
 		//概率
-		else if ( num == 6 ) {
-			/*angles = 2160 * rotNum + 2070;
-			notice = info[2] + info1[2];*/
-		}
+		 /*else if ( num == 6 ) {
+			angles = 2160 * rotNum + 2070;
+			notice = info[2] + info1[2];
+		}*/
 		//概率
 		else if ( num == 7 ) {
 			angles = 2160 * rotNum + 2115;
