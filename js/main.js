@@ -9,8 +9,8 @@ $(document).ready(function(){
 	var notice = null;
 	//转盘初始化
 	var color = ["#c1002d","#ffe365","rgba(0,0,0,0.5)","#94928e","white","#FF4350"];
-	var info = ["谢谢参与","  10","   1","  0.5","  100"," 0.1"," 神秘奖品","   0.05"];
-	var info1 = ['再接再厉','      红包','     红包','  红包','     红包','  红包','在等着你','    红包']
+	var info = ["谢谢参与","    10","   神秘奖品","  0.5","  100"," 0.1","    1","   0.05"];
+	var info1 = ['再接再厉','    元红包','','  元红包','  元红包',' 元红包','  元红包','    元红包']
 	canvasRun();
 	$('#tupBtn').bind('click',function(){
 		if (clickNum >= 1) {
@@ -47,24 +47,24 @@ $(document).ready(function(){
 	//各奖项对应的旋转角度及中奖公告内容
 	function probability(){
 		//获取随机数
-		var num = parseInt(Math.random()*(7 - 0 + 0) + 0);
+		var num = parseInt(Math.random()*(5 - 0 + 0) + 0);
 		//概率
 		/*if ( num == 0 ) {
 			angles = 2160 * rotNum + 1800;
 			notice = info[0] + info1[0];
 		}*/
 		//概率
-		 if ( num == 1 ) {
+		 if ( num == 0 ) {
 			angles = 2160 * rotNum + 1845;
 			notice = info[7] + info1[7];
 		}
 		//概率
-		else if ( num == 2 ) {
+		else if ( num == 1 ) {
 			angles = 2160 * rotNum + 1890;
 			notice = info[6] + info1[6];
 		}
 		//概率
-		else if ( num == 3 ) {
+		else if ( num == 2 ) {
 			angles = 2160 * rotNum + 1935;
 			notice = info[5] + info1[5];
 		}
@@ -74,7 +74,7 @@ $(document).ready(function(){
 			notice = info[4] + info1[4];
 		}*/
 		//概率
-		else if ( num == 5 ) {
+		else if ( num == 3 ) {
 			angles = 2160 * rotNum + 2025;
 			notice = info[3] + info1[3];
 		}
@@ -84,7 +84,7 @@ $(document).ready(function(){
 			notice = info[2] + info1[2];
 		}*/
 		//概率
-		else if ( num == 7 ) {
+		else if ( num == 4 ) {
 			angles = 2160 * rotNum + 2115;
 			notice = info[1] + info1[1];
 		}
